@@ -33,8 +33,11 @@ class ProductListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(ProductListViewModel::class.java)
         viewModel.init()
+    }
 
-        setObservers();
+    override fun onResume() {
+        super.onResume();
+        setObservers()
     }
 
     private fun setObservers() {

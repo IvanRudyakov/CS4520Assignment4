@@ -33,7 +33,7 @@ class ProductAdapter() : RecyclerView.Adapter<ProductAdapter.ViewHolder>() {
             binding.nameText.text = product.name;
             binding.nameText.visibility = if(product.name == null) View.GONE else View.VISIBLE;
 
-            binding.priceText.text = "$ " + product.price.toString();
+            binding.priceText.text = "$ " + String.format("%.2f", product.price);
             binding.priceText.visibility = if(product.price == null) View.GONE else View.VISIBLE;
 
             binding.expText.text = product.expiryDate;
