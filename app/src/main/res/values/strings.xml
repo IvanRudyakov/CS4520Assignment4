@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="passwordHint">Password</string>
+    <string name="usernameHint">Username</string>
+    <string name="loginLabel">login</string>
+</resources>
